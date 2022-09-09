@@ -1,0 +1,91 @@
+.animate-line-8 {
+  position: absolute;
+  top: 207px;
+  left: 280px;
+  width: 198px;
+  height: 164px;
+
+  &.active {
+    top: 370px;
+    left: 140px;
+  }
+}
+
+.animate-line-8-1 {
+  animation-delay: 0.1s;
+  animation: line-8-1 1.5s forwards ease-out;
+  display: flex;
+  width: 32px;
+}
+
+.animate-line-8-2 {
+  animation-delay: 0.1s;
+  animation: line-8-2 1.5s forwards ease-out;
+  display: flex;
+  width: 175.41px;
+}
+
+@keyframes line-8-1 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  100% {
+    right: 166px;
+    top: 156px;
+  }
+}
+
+@keyframes line-8-2 {
+  0% {
+    top: -143px;
+    right: -176px;
+  }
+  100% {
+    right: 0;
+    top: 0;
+  }
+}
+@media (min-width: 720px) and (max-width: 1199px) {
+  .animate-line-8 {
+    top: 138px;
+    left: 138.6px;
+    width: 132px;
+    height: 109.3px;
+
+    &.active {
+      top: 246.6px;
+      left: 93.3px;
+    }
+  }
+
+  .animate-line-8-1 {
+    width: 21.3px;
+  }
+
+  .animate-line-8-2 {
+    width: 116.94px;
+  }
+
+  @keyframes line-8-1 {
+    0% {
+      top: 0;
+      right: 0;
+    }
+    100% {
+      right: 110.6px;
+      top: 104px;
+    }
+  }
+
+  @keyframes line-8-2 {
+    0% {
+      top: -95.3px;
+      right: -117.3px;
+    }
+    100% {
+      right: 0;
+      top: 0;
+    }
+  }
+}

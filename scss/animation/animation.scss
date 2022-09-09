@@ -1,0 +1,230 @@
+@import "line-1.scss";
+@import "line-2.scss";
+@import "line-3.scss";
+@import "line-4.scss";
+@import "line-5.scss";
+@import "line-6.scss";
+@import "line-7.scss";
+@import "line-8.scss";
+@import "line-9.scss";
+@import "line-10.scss";
+@import "line-11.scss";
+@import "line-12.scss";
+@import "line-13.scss";
+@import "line-14.scss";
+@import "circle-3-4.scss";
+@import "crosses.scss";
+
+
+@media (max-width: 719px) {
+  .animate-line-5,
+  .animate-line-6,
+  .animate-line-7,
+  .animate-line-8,
+  .animate-line-9,
+  .animate-line-10,
+  .animate-line-11,
+  .animate-line-12,
+  .animate-circle-3,
+  .animate-circle-4,
+  .animate-cross {
+    display: none;
+  }
+}
+
+//show
+.anima-show {
+  transform: translate(0px, 40%);
+  transition: all 0.7s ease-in 0s;
+  opacity: 0;
+
+  &.anim-active {
+    transform: translate(0px, 0%);
+    transition: all 0.4s ease-in 0s;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 720px) {
+  .anima-show {
+    transform: translate(-120%, 0);
+
+    &.anima-show-1 {
+      transition: all 0.6s ease-in 0s;
+    }
+    &.anima-show-2 {
+      transition: all 0.5s ease-in 0s;
+    }
+    &.anima-show-3 {
+      transition: all 0.4s ease-in 0s;
+    }
+  }
+  .animate-crosses {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+.anima-show.anim-active,
+.anim-active .active-show {
+  opacity: 1;
+  transform: translate(0px, 0%);
+}
+
+
+.anima-show-early {
+  transform: translate(0px, -35%);
+  opacity: 0;
+  transition: all 0.4s ease 0s;
+}
+
+@media (min-width: 720px) {
+  .anima-show-early {
+    transform: translate(-120%, 0);
+
+    &.anima-show-early-1 {
+      transition: all 0.6s ease-in 0s;
+    }
+    &.anima-show-early-2 {
+      transition: all 0.5s ease-in 0s;
+    }
+    &.anima-show-early-3 {
+      transition: all 0.4s ease-in 0s;
+    }
+  }
+}
+
+.anima-show-early.anim-active,
+.anim-active .active-show-early {
+  opacity: 1;
+  transform: translate(0px, 0%);
+}
+
+
+// resize
+.anim-resize {
+  transform: scale(90%, 90%);
+  transition: all 1.2s ease 0s;
+}
+
+.anim-resize.anim-active,
+.anim-active .anim-resize {
+  transform: scale(100%, 100%);
+  transition: all 0.7s ease 0s;
+
+}
+
+// resize
+.anim-resize-2 {
+  transform: scale(80%, 80%);
+  transition: all 1.2s ease 0s;
+}
+
+.anim-resize-2.anim-active {
+  transform: scale(100%, 100%);
+  transition: all 0.7s ease 0s;
+}
+.animate-cross-1 {
+  left: -15%;
+  top: -10%;
+
+  &.active {
+    left: 4%;
+    top: 10%;
+    opacity: 1;
+  }
+}
+
+.animate-cross-2 {
+  right: -15%;
+  bottom: -10%;
+
+  &.active {
+    right: 12%;
+    bottom: 4%;
+    opacity: 1;
+  }
+}
+
+
+.animate-line-4 {
+  bottom: 0%;
+  left: 10%;
+
+  &.active {
+    bottom: 20%;
+    left: 25%;
+  }
+}
+
+.animate-circle-1 {
+  bottom: 14%;
+  left: -15%;
+
+  &.active {
+    left: 6%;
+    bottom: 6%;
+  }
+}
+
+.animate-circle-2 {
+  right: -0.5%;
+  bottom: 18%;
+
+  &.active {
+    right: 2%;
+    bottom: 18%;
+  }
+}
+
+ //   анимация движения
+.anim-left-right {
+  transform: translate(0);
+  animation-delay: 3s;
+  animation: 6s line-1 ease-in-out infinite alternate;
+
+  @media (min-width: 720px) {
+    animation: 3s line-1 ease-in-out infinite alternate;
+  }
+}
+
+.animate-hero {
+  opacity: 0;
+  transition: all 0.6s ease-in-out 0s;
+  transform: translate(-10px, -50px) scale(1.4, 1.4);
+}
+
+.animate-hero--active {
+  opacity: 1;
+  transition: all 0.6s ease-in-out 0s;
+  transform: translate(10px, 10px) scale(1, 1);
+}
+
+.animate-late-decoration,
+.animate-fast-decoration,
+.animate-decoration {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.animate-late-decoration,
+.animate-fast-decoration.active,
+.animate-decoration.active {
+  opacity: 1;
+  transition: all 0.7s ease-in-out 0s;
+}
+
+@keyframes line-1 {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(15px,-11px);
+  }
+}

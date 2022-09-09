@@ -1,0 +1,12 @@
+.animate-line-14 {
+  position: absolute;
+  bottom: 187px;
+  left: 500px;
+  width: 221px;
+  height: 187px;
+  background-color: purple;
+}
+.animate-line-14.active {
+  bottom: 200px;
+  left: 300px;
+}

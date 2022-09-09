@@ -1,0 +1,27 @@
+.animate-line-13 {
+  position: absolute;
+  right: 400px;
+  bottom: 200px;
+  width: 75px;
+  height: 62px;
+
+  &.active {
+    bottom: 120px;
+    right: 550px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1199px) {
+  .animate-line-13 {
+    position: absolute;
+    right: 140px;
+    bottom: 133.3px;
+    width: 50px;
+    height: 41.3px;
+
+    &.active {
+      bottom: 100px;
+      right: 175px;
+    }
+  }
+}

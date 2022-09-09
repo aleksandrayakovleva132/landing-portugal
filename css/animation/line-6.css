@@ -1,0 +1,9 @@
+.animate-line-6 {
+  top: -227px;
+  left: 292px;
+  position: absolute;
+}
+.animate-line-6.active {
+  top: 23px;
+  left: 22px;
+}

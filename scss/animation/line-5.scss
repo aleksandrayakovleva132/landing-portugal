@@ -1,0 +1,22 @@
+.animate-line-5 {
+  top: 138px;
+  left: -153px;
+  width: 187px;
+  height: 154px;
+  &.active {
+    top: -6px;
+    left: -20px;
+    z-index: 3;
+  }
+
+  @media (min-width: 720px) and (max-width: 1199px) {
+    top: 69px;
+    left: -76.5px;
+    width: 124.6px;
+    height: 102.6px;
+    &.active {
+      top: -3px;
+      left: -10px;
+    }
+  }
+}

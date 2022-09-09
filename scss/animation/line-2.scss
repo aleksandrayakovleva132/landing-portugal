@@ -1,0 +1,9 @@
+.animate-line-2 {
+  right: 0%;
+  top: -15%;
+
+  &.active {
+    right: 10%;
+    top: 3%;
+  }
+}

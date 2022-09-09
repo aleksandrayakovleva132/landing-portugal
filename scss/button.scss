@@ -1,0 +1,58 @@
+.button {
+  background: $default;
+  height: 42px;
+  border-radius: 48px;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  width: fit-content;
+
+  &__image {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+  }
+
+  &:active {
+    background: linear-gradient(110.7deg, #0AC0FF -9.14%, rgba(4, 219, 25, 0.7) 136.77%);
+  }
+
+  &__label {
+    text-decoration: none;
+    color: $white;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 60px;
+    cursor: pointer;
+    padding: 0 40px;
+
+    &:hover {
+      background: linear-gradient(110.7deg, #49EBF5 -9.14%, rgba(4, 219, 25, 0.7) 136.77%);
+      box-shadow: 1px 1px 20px rgba(28, 212, 120, 0.6);
+    }
+
+    &:active {
+      background: linear-gradient(110.7deg, #0AC0FF -9.14%, rgba(4, 219, 25, 0.7) 136.77%);
+    }
+
+    &::after {
+      top: 18px;
+      left: 66px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    & .button__image {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}

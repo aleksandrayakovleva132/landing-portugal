@@ -1,0 +1,259 @@
+.animate-line-9 {
+  position: absolute;
+  bottom: 187px;
+  left: 500px;
+  width: 221px;
+  height: 187px;
+
+  &.active {
+    bottom: 0;
+    left: 300px;
+  }
+}
+
+@mixin line-9 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 27px;
+  height: 6px;
+  animation-timing-function: ease-out;
+}
+
+.animate-line-9-1 {
+  animation-delay: 1s;
+  animation: line-9-1 0.7s forwards ease-out;
+  @include line-9;
+}
+
+.animate-line-9-2 {
+  animation-delay: 2s;
+  animation: line-9-2 0.7s forwards ease-out;
+  @include line-9;
+}
+
+.animate-line-9-3 {
+  animation-delay: 3s;
+  animation: line-9-3 0.7s forwards ease-out;
+  @include line-9;
+}
+
+.animate-line-9-4 {
+  animation-delay: 4s;
+  animation: line-9-4 0.7s forwards ease-out;
+  @include line-9;
+}
+
+.animate-line-9-5 {
+  animation-delay: 5s;
+  animation: line-9-5 0.7s forwards ease-out;
+  @include line-9;
+}
+
+.animate-line-9-6 {
+  animation-delay: 6s;
+  animation: line-9-6 0.7s forwards ease-out;
+  @include line-9;
+}
+
+.animate-line-9-7 {
+  animation-delay: 6s;
+  animation: line-9-7 1s forwards ease-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 160.8px;
+  height: 131.2px;
+}
+
+@keyframes line-9-1 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  100% {
+    right: 194px;
+    top: 181px;
+  }
+}
+
+@keyframes line-9-2 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  100% {
+    right: 184px;
+    top: 172px;
+  }
+}
+
+@keyframes line-9-3 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  100% {
+    right: 174px;
+    top: 163px;
+  }
+}
+
+@keyframes line-9-4 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  100% {
+    right: 164px;
+    top: 154px;
+  }
+}
+
+@keyframes line-9-5 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  100% {
+    right: 154px;
+    top: 145px;
+  }
+}
+
+@keyframes line-9-6 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  100% {
+    right: 144px;
+    top: 136px;
+  }
+}
+
+@keyframes line-9-7 {
+  0% {
+    right: -77px;
+    top: -71px;
+  }
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1199px) {
+  .animate-line-9 {
+    position: absolute;
+    bottom: 124.6px;
+    left: 333.3px;
+    width: 147.3px;
+    height: 124.6px;
+
+    &.active {
+      bottom: 0;
+      left: 200px;
+    }
+  }
+
+  .animate-line-9-7 {
+    width: 107.8px;
+    height: 90.4px;
+  }
+
+  @mixin line-9 {
+    width: 18px;
+    height: 4px;
+  }
+
+  .animate-line-9-1,
+  .animate-line-9-2,
+  .animate-line-9-3,
+  .animate-line-9-4,
+  .animate-line-9-5,
+  .animate-line-9-6 {
+    @include line-9;
+  }
+
+
+  @keyframes line-9-1 {
+    0% {
+      top: 0;
+      right: 0;
+    }
+    100% {
+      right: 129.3px;
+      top: 1220.6px;
+    }
+  }
+
+  @keyframes line-9-2 {
+    0% {
+      top: 0;
+      right: 0;
+    }
+    100% {
+      right: 122.6px;
+      top: 114.6px;
+    }
+  }
+
+  @keyframes line-9-3 {
+    0% {
+      top: 0;
+      right: 0;
+    }
+    100% {
+      right: 116px;
+      top: 108.6px;
+    }
+  }
+
+  @keyframes line-9-4 {
+    0% {
+      top: 0;
+      right: 0;
+    }
+    100% {
+      right: 109.3px;
+      top: 102.6px;
+    }
+  }
+
+  @keyframes line-9-5 {
+    0% {
+      top: 0;
+      right: 0;
+    }
+    100% {
+      right: 102.6px;
+      top: 96.6px;
+    }
+  }
+
+  @keyframes line-9-6 {
+    0% {
+      top: 0;
+      right: 0;
+    }
+    100% {
+      right: 96px;
+      top: 90.6px;
+    }
+  }
+
+  @keyframes line-9-7 {
+    0% {
+      right: -51.3px;
+      top: -47.3px;
+    }
+    100% {
+      top: 0;
+      right: 0;
+    }
+  }
+}
+

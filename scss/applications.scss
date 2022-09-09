@@ -1,0 +1,53 @@
+.applications {
+  display: flex;
+
+  &__galaxy {
+    width: 26px;
+    height: 26px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(from 178.83deg at 50% 50%, #F76551 -22.3deg, #F4605E 0.15deg, #E94B80 23.13deg, #DE33A4 46.22deg, #D41AC8 67.2deg, #CB06E5 90.34deg, #C902EC 101.42deg, #CB04E5 114.07deg, #D108D3 133.68deg, #D80DBA 156.06deg, #E1139E 181.45deg, #EC1E7B 214.47deg, #F22A65 242.38deg,
+            #F5355B 256.97deg, #F74452 271.62deg, #F75651 294.69deg, #F76051 316.25deg, #F76551 337.7deg, #F4605E 360.15deg);
+  }
+
+  &__item {
+    height: 40px;
+    border: 1px solid #A6A6A6;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+
+    &--first {
+      border-radius: 7.25px;
+      background-color: #231F20;
+      width: 147px;
+      margin-right: 16px;
+    }
+
+    &--second {
+      width: 133px;
+      border-radius: 6.75px;
+      background-color: $layer-0;
+    }
+  }
+
+  &__labels {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5px;
+  }
+
+  &__label {
+    display: flex;
+  }
+
+  &__subtitle {
+    display: flex;
+    margin-bottom: 4px;
+  }
+}
+
+
+

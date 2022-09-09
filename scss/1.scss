@@ -1,0 +1,216 @@
+.first-block {
+  position: relative;
+  overflow: hidden;
+
+  &__container {
+    padding: 0 16px;
+    margin-bottom: 32px;
+    z-index: 4;
+  }
+
+  &__badge {
+    width: 185px;
+    height: 28px;
+    border-radius: 32px;
+    background-color: $layer-2;
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+    margin-bottom: 24px;
+    color: $white;
+  }
+
+  &__star {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: $default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+  }
+
+  &__title {
+    color: $text-default;
+    margin: 0 0 24px 0;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: 0.2px;
+
+    &--mark {
+      color: transparent;
+      background-clip: text;
+      background-image: $default;
+    }
+  }
+
+  &__text {
+    margin: 0 0 32px 0;
+    color: $text-primary;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.6px;
+    font-weight: 300;
+    max-width: 380px;
+
+    &--mark {
+      color: $text-default;
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    margin-bottom: 16px;
+  }
+
+  &__aplications {
+    margin-bottom: 32px;
+  }
+
+  &__banner {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+    z-index: 1;
+
+    &-hero {
+      width: 90%;
+      max-width: 380px;
+      z-index: 3;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  &__decoration-image,
+  &__decoration {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__decor-item {
+    position: absolute;
+  }
+
+  &__decoration--desktop {
+    position: absolute;
+  }
+
+  &__banner-hero--desktop {
+    display: none;
+  }
+
+  &__decoration-items {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__decor-top {
+    display: none;
+  }
+
+  @media (max-width: 720px) {
+    &__banner {
+      position: relative;
+    }
+  }
+
+  @media (min-width: 720px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    &__container {
+      padding: 0 0 0 2%;
+      width: 48%;
+    }
+
+    &__banner {
+      width: 52%;
+      padding-bottom: 74px;
+      justify-content: start;
+      background-image: url('../images/1/bg-desk.svg');
+
+      &--mobile {
+        display: none;
+      }
+
+      &-hero {
+        max-width: 40vw;
+      }
+    }
+    &__decoration--mobile {
+      display: none;
+    }
+    &__decoration--block {
+      display: none;
+    }
+    &__banner-hero--mobile {
+      display: none;
+    }
+    &__decoration--desktop {
+      display: block;
+    }
+    &__banner-hero--desktop {
+      display: block;
+    }
+    &__decor-top {
+      display: block;
+      position: absolute;
+    }
+  }
+
+  @media (min-width: 720px) and (max-width: 1400px) {
+    &__banner-bg {
+      margin-left: -16%;
+    }
+    &__banner-hero {
+      max-width: 50vw;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__title {
+      font-size: 50px;
+      line-height: 72px;
+      margin-bottom: 32px;
+      max-width: 539px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+      max-width: 539px;
+    }
+
+    &__footer {
+      display: flex;
+      align-items: center;
+    }
+
+    &__button {
+      margin: 0 16px 0 0;
+    }
+
+    &__banner {
+      height: 100%;
+    }
+  }
+}

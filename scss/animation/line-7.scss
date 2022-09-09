@@ -1,0 +1,27 @@
+.animate-line-7 {
+  top: 0;
+  left: 610px;
+  position: absolute;
+  z-index: 3;
+  width: 75px;
+  height: 62px;
+  &.active {
+    top: 44px;
+    left: 550px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1199px) {
+  .animate-line-7 {
+    top: 0;
+    left: 406px;
+    position: absolute;
+    z-index: 3;
+    width: 50px;
+    height: 41.3px;
+    &.active {
+      top: 30px;
+      left: 366px;
+    }
+  }
+}

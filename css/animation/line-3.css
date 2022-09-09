@@ -1,0 +1,8 @@
+.animate-line-3 {
+  left: 35%;
+  bottom: -20%;
+}
+.animate-line-3.active {
+  left: 45%;
+  bottom: -8%;
+}
