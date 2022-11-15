@@ -41,38 +41,4 @@ const animateHeroes = document.querySelectorAll('.animate-hero');
 const animateDecorations = document.querySelectorAll('.animate-decoration');
 const animateLateDecorations = document.querySelectorAll('.animate-late-decoration');
 
- function animateHeroBanner() {
-         for( let index = 0; index < animateHeroes.length; index++) {
-             const animateHero = animateHeroes[index];
-             animateHero.classList.add('animate-hero--active');
-         }
- }
-
-if(animateBanner) {
-function animateDecorationBanner() {
-     for( let index = 0; index < animateDecorations.length; index++) {
-         const animItem = animateDecorations[index];
-         animItem.classList.add('active');
-     }
-}
-function animateLateDecorationBanner() {
-    for( let index = 0; index < animateLateDecorations.length; index++) {
-        const animItem = animateLateDecorations[index];
-        animItem.classList.add('active');
-    }
-}
-}
-
-function showYear() {
-    var date = new Date();
-
-    var year = date.getFullYear();
-
-    document.getElementById("currentYear").innerText = year;
-}
-showYear();
-
-setTimeout(animateLateDecorationBanner, 10);
-setTimeout(animateDecorationBanner, 80);
-setTimeout(animateHeroBanner, 250);
 
